@@ -3,7 +3,7 @@ import java.util.*;
 
 // import com.sun.org.apache.xml.internal.serializer.ElemDesc;
 
-class Graph {
+class DFS_graph {
     private LinkedList<Integer> adjacent[];
     private int V;
 
@@ -24,7 +24,7 @@ class Graph {
 
     public static void main (String[] args) {
         Scanner scan = new Scanner(System.in);        
-        Graph g = new Graph(scan.nextInt());
+        DFS_graph g = new DFS_graph(scan.nextInt());
         g.addEdge(0, 1);
         g.addEdge(0, 2);
         g.addEdge(1, 2);
